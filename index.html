@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+    <h1>Student Management System</h1>
+
+    <div id="studentForm">
+        <h2>New Student Data Entry</h2>
+        <!-- Form to add new students -->
+        <form id="addStudentForm">
+            <label for="rollNo">Roll Number:</label>
+            <input type="text" id="rollNo" placeholder="Enter Roll Number"><br><br>
+
+            <!-- Other input fields for student details -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+            <label for="fName">Father's Name:</label>
+            <input type="text" id="fName" placeholder="Enter Father's Name"><br><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" placeholder="Enter Class"><br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" placeholder="Enter Gender"><br><br>
+
+            <label for="mobileNo">Mobile number:</label>
+            <input type="text" id="mobileNo" placeholder="Enter Mobile Number"><br><br>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="text" id="cgpa" placeholder="Enter CGPA"><br><br>
+
+            <button type="button" onclick="addStudent()">Add Student</button>
+            <button type="button" onclick="downloadCSV()">Download Data</button>
+            <button type="button" onclick="clearForm()">Clear</button>
+        </form>
+    </div>
+
+    <div id="studentDetails">
+        <h2>Student Details</h2>
+        <!-- Table to display student details -->
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Father's Name</th>
+                    <th>Class</th>
+                    <th>Gender</th>
+                    <th>Mobile Number</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody id="studentData">
+                <!-- Student details will appear here -->
+            </tbody>
+        </table>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
